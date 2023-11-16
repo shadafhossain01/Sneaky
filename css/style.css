@@ -1,0 +1,753 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    overflow-x: hidden;
+}
+:root{
+    --opn:'Open Sans', sans-serif;
+
+    --jesifin:'Josefin Sans', sans-serif;
+    --primary:#2F2D4E;
+    --secondary:rgb(226, 33, 4);
+}
+a{
+    text-decoration: none;
+}
+ul li{
+   
+    list-style: none;
+}
+/* *********header css  **********/
+header{
+    width: 100%;
+}
+
+header .nav-link{
+    font-family: "Open Sans",sans-serif;
+    color: #2f2d4e;
+    text-transform: capitalize;
+    font-size: 17px;
+    font-weight: 400;
+    padding: 30px 0px;
+    display: inline-block;
+}
+header .nav-link:hover{
+    color: #E51002;
+}
+
+header .nav-item .active{
+    color: #E51002 ;
+}
+header ul li{
+    margin-right: 17px;
+}
+
+.stick{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 99999;
+    padding: 0;
+
+ 
+  }
+
+/* *********banner css  **********/
+.banner{
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 0px;
+}
+.banner-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.banner h3{
+color: var(--primary);
+font-family: var(--jesifin);
+font-size: 70px;
+font-weight: bold;
+line-height: 70px;
+}
+
+ .buy{
+    display: inline-block;
+    background-color: #e22104;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 30px;
+    padding: 15px 40px;
+    text-transform: capitalize;
+    -webkit-transition: all .3s ease 0s;
+    -moz-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+}
+ .buy:hover{
+    background-color: red;
+    color: #fff;
+}
+
+.banner-left span{
+    margin-left: 15px;
+    font-size: 20px;
+}
+.banner-left span:hover{
+    color: #0056b3;
+}
+
+.banner-left span i{
+    margin-right: 10px;
+    font-size: 30px;
+    vertical-align: middle;
+    color: transparent;
+   
+}
+.choto{
+margin-left: -74px;
+    text-align: center;
+}
+
+.choto .mid{
+    margin-left: 26%;
+    margin-top: 25px;
+}
+
+.left-icon{
+    position: absolute;
+    left: 1%;
+    top: 32%;
+}
+.left-icon i{
+    display: block;
+  
+    margin-bottom: 45px;
+
+}
+.left-icon i:hover{
+    color: #E51002;
+}
+.left-icon a{
+    font-weight: 300;
+    color: #2f2d4e;
+    font-size: 30px;
+}
+
+.owl-nav{
+    display: none;
+}
+.owl-dots .active span {
+background-color: var(--secondary) !important;
+}
+
+/* *********about  css  **********/
+.about{
+    width: 100%;
+    padding: 100px 0px;
+}
+.about-left{
+    position: relative;
+}
+.about-left .img2{
+    position: absolute;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+}
+.about-right{
+    display: flex;
+    align-items: center;
+}
+
+.about-right h3{
+
+    font-size: 30px;
+    color: #e22104;
+    padding-right: 115px;
+    position: relative;
+    margin-bottom: 15px;
+    font-family: var(--jesifin);
+    position: relative;
+}
+.about-right h3::after{
+    position: absolute;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.616);
+    width: 25%;
+    height: 3px;
+    bottom: 43%;
+    left: 36%;
+}
+
+.about-right span{
+    color: var(--primary);
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 66px;
+   
+}
+.about-right p{
+    margin-top: 25px;
+    font-weight: 400;
+    font-family: var(--opn);
+    font-size: 17px;
+}
+
+.about-right .buy{
+    margin-top: 30px;
+}
+
+
+
+/* *********feature  css  **********/
+
+.feature{
+    width: 100%;
+    padding: 70px 0px;
+}
+.feature h3{
+    font-size: 30px;
+    color: #e22104;
+    padding-right: 115px;
+    position: relative;
+    margin-bottom: 15px;
+    font-family: var(--jesifin);
+    position: relative;
+}
+.feature h3::after{
+    position: absolute;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.616);
+    width: 8%;
+    height: 3px;
+    bottom: 43%;
+    left: 18%;
+}
+
+.feature span{
+    color: var(--primary);
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 66px;
+}
+
+.f-item .item{
+    padding-left: 30px;
+    background: #fff8f7;
+    width: 90%;
+}
+.f-item .item:hover{
+    background-color: white;
+}
+.f-item h4{
+color: var(--primary);
+
+margin-top: 20px;
+}
+.f-item p{
+   color: #918787;
+  
+    font-size: 17px;
+}
+.f-item span{
+    color: red;
+    margin-left: 165px;
+    font-size: 25px;
+   
+}
+.f-item i{
+    color: orangered;
+   
+}
+
+
+/* ******************
+       offer css
+***************************/
+.offer{
+    width: 100%;
+    background-color: #FFF8F7;
+    padding: 200px 0px;
+    display:flex;
+    align-items: center;
+}
+.offer-item{
+    position: relative;
+}
+.offer-overlay{
+    position: absolute;
+    background-color: rgb(226, 33, 4);
+    padding: 90px 131px;
+    top: 22%;
+    left: 35%;
+}
+.offer-overlay h3{
+    color: white;
+    font-size: 45px;
+}
+
+.offer-overlay h2{
+    color: white;
+    font-size: 45px;
+    text-align: center;
+}
+.offer-overlay .buy{
+    border: 1px solid white;
+    margin-left: 26%;
+    margin-top: 30px;
+}
+/* *************
+menu css
+********************/
+.menu{
+    width: 100%;
+    padding: 70px 0px;
+}
+.menu h3{
+    font-size: 30px;
+    color: #e22104;
+    padding-right: 115px;
+    position: relative;
+    margin-bottom: 15px;
+    font-family: var(--jesifin);
+    position: relative;
+}
+.menu h3::after{
+    position: absolute;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.616);
+    width: 7%;
+    height: 3px;
+    bottom: 43%;
+    left: 15%;
+}
+
+.menu span{
+    color: var(--primary);
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 66px;
+}
+
+
+.menu-item h5{
+color: var(--primary);
+    z-index: 1;
+    padding-right: 10px;
+    margin-bottom: 15px;
+    position: relative;
+    font-size: 23px;
+}
+.menu-item h5::after{
+    content: "";
+    position: absolute;
+    width: 36%;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.616);
+    left: 43%;
+    bottom: 35%;
+}
+.menu-item span{
+    color: var(--secondary);
+    font-size: 25px;
+    position: relative;
+    top: -69%;
+    left: 81%;
+}
+
+.menu-item{
+    background-color: #FFF8F7;
+ padding-top: 14px;
+ transition: all 0.5s linear;
+}
+
+.menu-item:hover{
+    background-color: white;
+    box-shadow: 0 10px 20px 0 rgb(8 6 89 / 10%); 
+}
+
+
+
+
+
+/* *************
+reservation css
+********************/
+.reservation{
+    width: 100%;
+    padding: 140px 0px;
+    background-image:linear-gradient(rgba(2,1,15,0.7),rgba(0,0,0,0.8)), url(../img/bg.png);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.reservation span{
+    color: white;
+    font-size: 20px;
+    font-family: var(--opn);
+    
+}
+
+
+.reservation h4{
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+
+/* *******************
+         chef css
+***********************/
+.chef {
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.chef  h3{
+color: var(--secondary);
+position: relative;
+font-family: var(--jesifin);
+font-size: 30px;
+margin-bottom: 20px;
+}
+.chef  h3::after{
+    position: absolute;
+    content: "";
+    width: 8%;
+    height: 3px;
+    background-color: rgba(0, 0, 0, 0.616);
+    left: 13%;
+    bottom: 53%;
+}
+
+.chef-item{
+    position: relative;
+}
+
+
+.chef p{
+    font-family: "Josefin Sans",sans-serif;
+    color: #2f2d4e;
+    line-height: 1.2;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+
+.chef .c-item{
+    text-align: center;
+    background-color: white;
+    width: 80%;
+    padding: 15px 0px;
+    position: absolute;
+    top: 74%;
+    left: 2%;
+}
+.chef-item:hover .chef-overlay{
+   
+    height: 100%;
+    opacity: 1;
+}
+
+.chef-item:hover .c-item{
+    z-index: 99999;
+}
+
+
+.chef-overlay{
+  
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background: rgba(2,1,15,.5);
+    width: 87%;
+    height: 100%;
+   
+    height: 0;
+    opacity: 0;
+    transition: all 0.5s linear;
+}
+
+.chef-overlay a{
+    position: relative;
+    top: 30%;
+    left: 89%;
+}
+
+.chef-overlay a{
+    display: block;
+}
+
+.chef-overlay a i{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.chef-overlay a i:hover{
+    color: var(--secondary);
+}
+
+
+.chef .c-item h4{
+    color: var(--primary);
+    font-family: var(--jesifin);
+}
+
+
+/* *********************
+         table css
+*********************** */
+.table{
+    width: 100%;
+    padding: 70px 0px;
+    background-color: #FFF8F7;
+}
+
+.table h3{
+    color: var(--secondary);
+    position: relative;
+    font-family: var(--jesifin);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.table h3::after{
+    position: absolute;
+    content: "";
+    width: 8%;
+    height: 3px;
+    background-color: rgba(0, 0, 0, 0.616);
+    left: 27%;
+    bottom: 50%;
+}
+
+.table span{
+    font-family: "Josefin Sans",sans-serif;
+    color: #2f2d4e;
+    line-height: 1.2;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.table p{
+    color: rgba(0, 0, 0, 0.493);
+    margin-top: 25px;
+    line-height: 30px;
+}
+
+
+
+.table .form-item form{
+    background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,1.1)), url(../img/table.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 70%;
+    margin: auto;
+
+    padding: 53px 24px;
+ 
+
+}
+.table .form-item{
+    position: relative;
+}
+
+.table form input{
+    width: 94%;
+    padding: 11px 16px;
+    margin-left: 16px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+
+}
+
+.table form div{
+    position: relative;
+}
+.table form i{
+    position: absolute;
+    left: 90%;
+    top: 17%;
+    font-size: 18px;
+    color: var(--secondary);
+}
+
+
+.table form h4{
+ padding: 30px 0px;
+ color: white;
+ font-family: var(--opn);
+ font-size: 30px;
+}
+
+
+.table a{
+
+    position: absolute;
+    left: 39%;
+    top: 94%;
+}
+
+/* *******************
+ blog css
+************************/
+
+
+.blog{
+    width: 100%;
+    padding: 110px 0px;
+}
+.blog h3{
+    font-size: 30px;
+    color: #e22104;
+    padding-right: 115px;
+    position: relative;
+    margin-bottom: 15px;
+    font-family: var(--jesifin);
+    position: relative;
+}
+.blog h3::after{
+    position: absolute;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.616);
+    width: 7%;
+    height: 3px;
+    bottom: 43%;
+    left: 12%;
+}
+
+.blog span{
+    color: var(--primary);
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 66px;
+   
+}
+
+.blog .item {
+  padding: 20px 47px;
+  width: 87%;
+  transition: all 0.3s linear;
+}
+
+
+.blog .item:hover{
+    box-shadow: 0px 0px 4px black;
+
+}
+
+
+/* *****************************
+       footer css
+********************************/
+footer {
+  width: 100%;
+  background-color: #FFF8F7;
+  padding: 70px 0px;
+}
+footer h4{
+    font-weight: 600;
+    margin-bottom: 25px;
+    font-size: 30px;
+    color: var(--primary);
+}
+
+footer ul {
+    padding-left: 0px !important;
+}
+
+footer ul li{
+    color: #777;
+    margin-bottom: 15px;
+}
+
+footer ul li:hover{
+    color: var(--secondary);
+}
+
+footer  span{
+    color: #777;
+    
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+footer  input{
+    width: 80%;
+    padding: 0px 11px;
+    height: 20%;
+    margin-top: 40px;
+    
+}
+footer  input:focus{
+    outline: none;
+    border: none;
+}
+
+.f-right {
+    position: relative;
+}
+ 
+
+.arrow i{
+    position: absolute;
+  right: 96px;
+    top: 127px;
+    background-color: var(--secondary);
+    color: white;
+    padding: 12px;
+    font-size: 20px;
+}
+
+footer p{
+    color: #777;
+ 
+}
+footer p span{
+    color: var(--secondary);
+}
+
+footer .icon2{
+    display: flex;
+justify-content: flex-end;
+width: 86%;
+}
+footer .icon2 ul li {
+    display: inline-block;
+    margin-left: 10px;
+
+}
+
+footer .icon2 i{
+    width: 35px;
+    height: 35px;
+background-color: var(--primary);
+color: white;
+line-height: 35px;
+text-align: center;
+transition: 0.5s;
+   
+}
+footer .icon2 i:hover{
+    background-color: var(--secondary);
+}
